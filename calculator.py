@@ -16,7 +16,7 @@ def notLessThanZero(minutes):
     return isMoreThanZero(lessFactor + moreFactor)
 
 def isTimeMoreThanZero(minutes):
-    # padding for prevent minutes == 1 that cause devide by zero error
+    # padding for prevent minutes == -1 that cause devide by zero error
     padded = padding(minutes)
     return notLessThanZero(padded)
 
